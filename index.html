@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Interactive card details form</title>
+
+  
+</head>
+<body>
+  <div class="left">
+    <img src="bg-main-desktop.png" alt="">
+    <div class="front-card">
+      <h1>0000 0000 0000 0000</h1>
+      <div class="footer">
+        <p>JANE APPLESEED</p>
+        <p class="cvv-date">00/00</p>
+      </div>
+    </div>
+    <img class="back-card" src="bg-card-back.png" alt="">
+  </div>
+  <div class="right">
+    <form action="#submit">
+      <div class="fields">
+        <label for="username">Cardholder name</label>
+        <input type="text" id="username" name="username" placeholder="e.g. Jane Appleseed">
+        <p class="error"></p>
+      </div>
+      <div class="fields">
+        <label for="cardnumber">Card Number</label>
+        <input type="text" id="cardnumber" name="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
+        <p class="error"></p>
+      </div>
+      <div class="fields cvv">
+        <div class="footer-left">
+          <label for="date">Exp.Date(MM/YY)</label>
+          <div class="mm-yy">
+            <input type="number" id="month" name="month" placeholder="MM">
+            <p class="error"></p>
+            <input type="number" id="year" name="year" placeholder="YY">
+            <p class="error"></p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <label for="cvv">CVV</label>
+          <input type="password" id="cvv" name="cvv" placeholder="e.g. 123">
+          <p class="error"></p>
+        </div>
+      </div>
+      <button class="btn">Confirm</button>
+    </form>
+  </div>
+
+  
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <script src="script.js"></script>
+</body>
+</html>

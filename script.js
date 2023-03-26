@@ -166,11 +166,16 @@ confirmButton.addEventListener('click', (e)=>{
         inputCVV.nextElementSibling.textContent = 'Please enter a valid CVV';
         thankYou = false;  
     } 
-
     if (thankYou) {
         thankYouCard();
     }
     
 });
+
+
+
+
+
+
 
 

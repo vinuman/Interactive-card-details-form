@@ -155,7 +155,7 @@ confirmButton.addEventListener('click', (e)=>{
     thankYou = false;  
    }
 
-    if(inputYear.value =='' || inputYear.value<currentYear%100){
+    if(inputYear.value =='' || inputYear.value<currentYear%100 || inputYear.value>(currenYear%100)+10){
         inputYear.nextElementSibling.classList.add('show');
         inputYear.nextElementSibling.textContent = 'Please enter a valid year';
         thankYou = false;  
